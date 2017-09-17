@@ -19,4 +19,5 @@
 자작곡 및 사진: CCL(BY, NC, SA)
 
 ## Screen Shots
-![]()
+![](https://https://github.com/thesoncriel/persnal.home/screenshots/001.png)
+![](https://https://github.com/thesoncriel/persnal.home/screenshots/002.png)
