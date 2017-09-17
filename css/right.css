@@ -1,0 +1,91 @@
+/* 우측 프레임 스타일 */
+* {
+padding:0px;
+margin:0px;
+}
+body{
+border-width:4px;
+/*border-style:none none none dashed;*/
+border-left-style:dashed;
+border-color:#417eb7;
+height:100%;
+}
+
+
+/* 타이머 디자인 */
+#timer_box{
+border-width:10px;
+border-style:solid;
+border-color:#cccccc;
+position:absolute;
+background-color:#ffffff;
+padding:0px;
+top:80%;
+left:30px;
+opacity:0.8;
+}
+
+#ampm{
+font-size:50px;
+font-family:"arial black" sans-serif;
+font-weight:bold;
+position:absolute;
+color:#7f9db9;
+opacity:0.5;
+filter:alpha(opacity=50);
+}
+#hour0{
+font-size:38px;
+font-family:"arial" sans-serif;
+font-weight:bold;
+position:relative;
+}
+#hour1{
+font-size:40px;
+font-family:"arial" sans-serif;
+font-weight:bold;
+position:relative;
+top:-3px;
+}
+#col0{
+font-size:40px;
+font-family:"arial" sans-serif;
+font-weight:bold;
+position:relative;
+top:-11px;
+}
+#min0{
+font-size:25px;
+font-family:"arial" sans-serif;
+font-weight:bold;
+position:relative;
+top:-5px;
+}
+#min1{
+font-size:40px;
+font-family:"arial" sans-serif;
+font-weight:bold;
+position:relative;
+top:3px;
+}
+#col1{
+font-size:25px;
+font-family:"arial" sans-serif;
+font-weight:bold;
+position:relative;
+top:-9px;
+}
+#sec0{
+font-size:20px;
+font-family:"arial" sans-serif;
+font-weight:bold;
+position:relative;
+top:-10px;
+}
+#sec1{
+font-size:15px;
+font-family:"arial" sans-serif;
+font-weight:bold;
+position:relative;
+top:-15px;
+}

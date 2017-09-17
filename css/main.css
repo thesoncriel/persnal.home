@@ -1,0 +1,475 @@
+﻿
+.main_para{/*문서 전체 단락*/
+width:92%;
+color:#444444;
+position:absolute;
+}
+	a:link, a:visited{
+	text-decoration:none;
+	color:#000000;
+	font-weight:bold;
+	background-color:#ec9999;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	}
+	a:hover{
+	text-decoration:none;
+	color:#000000;
+	border-color:#ff00ff;
+	border-style:dotted none;
+	border-width:1px;
+	background-color:transparent;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+	}
+
+/*문서의 모서리 디자인*/
+div#tableTitle{
+top:50px;
+border-width:0px;
+position:absolute;
+}
+	td.cella{
+	width:20px;
+	height:18px;
+	border-width:1px;
+	border-style:none solid solid none;
+	border-color:#000000;
+	background-color:#eebbac;
+	}
+	td.cellb{
+	width:20px;
+	height:18px;
+	border-width:1px;
+	border-style:none none solid none;
+	border-color:#000000;
+	}
+	td.cellc{
+	width:100px;
+	height:18px;
+	border-width:1px;
+	border-style:none none solid none;
+	border-color:#000000;
+	}
+	td.celld{
+	width:20px;
+	height:20px;
+	border-width:1px;
+	border-style:none solid solid none;
+	border-color:#000000;
+	}
+	td.celle{
+	width:20px;
+	height:20px;
+	border-width:1px;
+	border-style:none none solid none;
+	border-color:#000000;
+	background-color:#b3e8d6;
+	}
+	td.cellf{
+	height:20px;
+	border-width:1px;
+	border-style:none;
+	border-color:#000000;
+	}
+	td.cellg{
+	width:20px;
+	height:16px;
+	border-width:1px;
+	border-style:none solid none none;
+	border-color:#000000;
+	}
+	/*모서리 디자인 내 큰 제목*/
+	.mainTitle{
+	width:650px;
+	color:rgb(46,150,210);
+	font-size:30px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	letter-spacing:2px;
+	position:absolute;
+	}
+
+/*단락 제목*/
+.para_title0{
+font-size:30px;
+color:#ec8363;
+font-family:"궁서";
+}
+.para_title1{
+font-size:30px;
+color:#df63de;
+font-family:"궁서";
+}
+.para_title2{
+font-size:26px;
+color:#5fc882;
+font-family:"바탕";
+font-weight:bold;
+}
+	.para_title2_sub{
+	margin-left:50px;
+	}
+
+
+/*단락 내용 디자인*/
+.para{
+line-height:27px;
+font-size:14px;
+margin-left:17px;
+}
+.para1{
+line-height:27px;
+font-size:14px;
+margin-left:35px;
+}
+	/*단락의 첫 글자 디자인*/
+	#first_word0, #first_word1, #first_word2, #first_word3{
+	font-size:26px;
+	font-weight:bold;
+	color:#63b550;
+	}
+
+/*바닥글 디자인*/
+div#bottom_box{
+position:absolute;
+left:50px;
+}
+	#bottom_line0{
+	width:55%;
+	position:absolute;
+	left:45%;
+	}
+	#bottom_line1{
+	width:65%;
+	position:absolute;
+	left:5%;
+	}
+
+/*문서내 특수 스타일 디자인*/
+.type0{
+text-decoration:underline;
+font-size:20px;
+font-weight:bold;
+color:#888888;
+}
+.type1{
+font-size:18px;
+font-family:"돋움";
+font-weight:bold;
+color:#63acdf;
+}
+.type2{
+font-size:18px;
+font-family:"궁서";
+font-weight:bold;
+font-style:italic;
+color:#9463df;
+}
+.type3{
+font-size:16px;
+font-family:"바탕";
+border-bottom-style:dotted;
+border-bottom-width:1px;
+border-color:#ff00cc;
+}
+.type4{
+font-size:20px;
+font-weight:bold;
+font-family:"궁서";
+background-color:#dff7ff;
+}
+.type5{
+font-size:18px;
+color:#a9692a;
+border-bottom-style:dashed;
+border-bottom-width:2px;
+border-color:#39a92a;
+}
+.type6{
+font-size:22px;
+font-weight:bold;
+color:#245374;
+border-style:none dotted;
+border-width:2px;
+border-color:#552474;
+padding:3px;
+}
+.type7{
+font-size:17px;
+font-weight:bold;
+font-style:italic;
+font-variant:small-caps;
+}
+
+
+
+/* 메뉴 스타일 시트 정의 ^^ */
+.menu_top{
+font-weight:bold;
+font-family:"arial black";
+color:#417eb7;
+}
+
+
+.m01{
+width:200px;
+height:50px;
+top:35px;
+left:20px;
+border-width:6px;
+border-style:dotted;
+border-color:#ffffff;
+position:relative;
+padding:5px;
+}
+	.m01a{/*WHO*/
+	color:#af8fc4;
+	font-size:26px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m01b{/*Am*/
+	color:#bb842f;
+	font-size:22px;
+	top:20px;
+	left:44px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+	.m01c{/*I*/
+	color:#446186;
+	font-size:38px;
+	top:4px;
+	left:95px;
+	font-family:"times new roman" fantasy;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m01d{/*?*/
+	color:#000000;
+	font-size:18px;
+	top:14px;
+	left:115px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+.m02{
+width:200px;
+height:50px;
+top:35px;
+left:20px;
+position:relative;
+padding:5px;
+}
+	.m02a{/*Memory*/
+	color:#75beaa;
+	font-size:30px;
+	top:1px;
+	left:7px;
+	letter-spacing:-3px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m02b{/*Extract*/
+	font-size:14px;
+	font-family:monospace;
+	font-style:italic;
+	font-weight:bold;
+	position:absolute;
+	}
+.m03{
+}
+	.m03a{/*MUSI*/
+	color:#75b1be;
+	font-size:32px;
+	top:7px;
+	left:7px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m03b{/*C*/
+	color:#cde5ea;
+	font-size:60px;
+	top:-10px;
+	left:100px;
+	font-family:"arial balck" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m03c{/*Junked*/
+	font-size:22px;
+	left:80px;
+	font-variant:small-caps;
+	font-family:"arial" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+.m04{
+}
+	.m04a{/*MY*/
+	color:#00c32e;
+	font-size:14px;
+	top:-3px;
+	font-family:"comic sans ms" cursive;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m04b{/*FREE*/
+	color:#c38e00;
+	font-size:32px;
+	top:4px;
+	left:4px;
+	letter-spacing:3px;
+	font-family:"arial" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m04c{/*Programs*/
+	font-size:20px;
+	top:25px;
+	left:20px;
+	letter-spacing:4px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+.m05{
+}
+	.m05a{/*EVOL*/
+	color:#d5e497;
+	font-size:35px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m05b{/*ution*/
+	color:#ffcc00;
+	font-size:27px;
+	top:13px;
+	left:108px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+	.m05c{/*Revol*/
+	font-size:20px;
+	top:2px;
+	left:95px;
+	letter-spacing:4px;
+	font-family:"times new roman" fantasy;
+	position:absolute;
+	}
+.m06{
+}
+	.m06a{
+	color:#ade8e2;
+	font-size:35px;
+	left:6px;
+	letter-spacing:-2px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+	.m06b{
+	font-size:28px;
+	top:17px;
+	left:80px;
+	font-family:"times new roman" fantasy;
+	position:absolute;
+	}
+	.m06c{
+	color:#391b51;
+	font-size:14px;
+	top:13px;
+	letter-spacing:4px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+.m07{
+}
+	.m07a{
+	color:#e3a4b1;
+	font-size:40px;
+	top:3px;
+	left:7px;
+	letter-spacing:4px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+	.m07b{
+	font-size:14px;
+	top:30px;
+	left:6px;
+	letter-spacing:4px;
+	font-family:cursive;
+	font-weight:bold;
+	position:absolute;
+	}
+.m08{
+}
+	.m08a{
+	color:#c9e6e6;
+	font-size:38px;
+	top:-10px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m08b{
+	color:#562949;
+	font-size:28px;
+	top:18px;
+	left:50px;
+	letter-spacing:4px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+.m09{
+}
+	.m09a{
+	color:#e6e5bc;
+	font-size:44px;
+	top:-5px;
+	left:4px;
+	letter-spacing:-2px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m09b{
+	color:#2c5650;
+	font-size:20px;
+	top:-2px;
+	left:1px;
+	letter-spacing:4px;
+	font-family:cursive;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m09c{
+	font-size:20px;
+	top:25px;
+	left:60px;
+	letter-spacing:4px;
+	font-family:"times new roman" fantasy;
+	font-style:italic;
+	position:absolute;
+	}
+
+
+/* 이미지 레이아웃 디자인 및 설명 */
+img.img0{
+	border-color:#aaaaaa;
+	border-style:dashed;
+	border-width:3px;
+	margin-left:17px;
+	padding:3px;
+}
+	.desc0{
+		margin-left:50px;
+		font-size:11px;
+		border-width:0px 0px 1px 0px;
+		border-style:dotted;
+		border-color:#9999ff;
+	}

@@ -1,0 +1,269 @@
+
+a:link, a:visited, a:hover, a:active{
+text-decoration:none;
+}
+
+*{
+margin:0px;
+padding:0px
+}
+body{
+border-width:4px;
+/*border-style:none none none dashed;*/
+border-right-style:dashed;
+border-color:#417eb7;
+height:100%;
+}
+/* 메뉴 스타일 시트 정의 ^^ */
+.menu_top{
+font-weight:bold;
+font-family:"arial black";
+color:#417eb7;
+}
+
+
+.m01{
+border-width:2px;
+border-style:dashed;
+border-color:#f0f0f0;
+position:relative;
+height:50px;
+background-color:#ffffff;
+margin-top:11px;
+opacity:0.8;
+filter:alpha(opacity=80);
+}
+	.m01a{/*WHO*/
+	color:#af8fc4;
+	font-size:26px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m01b{/*Am*/
+	color:#bb842f;
+	font-size:22px;
+	top:20px;
+	left:44px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+	.m01c{/*I*/
+	color:#446186;
+	font-size:38px;
+	top:4px;
+	left:95px;
+	font-family:"times new roman" fantasy;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m01d{/*?*/
+	color:#000000;
+	font-size:18px;
+	top:14px;
+	left:115px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+.m02{
+}
+	.m02a{/*Memory*/
+	color:#75beaa;
+	font-size:30px;
+	top:1px;
+	left:7px;
+	letter-spacing:-3px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m02b{/*Extract*/
+	color:#000000;
+	font-size:14px;
+	font-family:monospace;
+	font-style:italic;
+	font-weight:bold;
+	position:absolute;
+	}
+.m03{
+}
+	.m03a{/*MUSI*/
+	color:#75b1be;
+	font-size:32px;
+	top:7px;
+	left:7px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m03b{/*C*/
+	color:#cde5ea;
+	font-size:60px;
+	top:-10px;
+	left:100px;
+	font-family:"arial balck" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m03c{/*Junked*/
+	color:#000000;
+	font-size:22px;
+	left:80px;
+	font-variant:small-caps;
+	font-family:"arial" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+.m04{
+}
+	.m04a{/*MY*/
+	color:#00c32e;
+	font-size:14px;
+	top:-3px;
+	font-family:"comic sans ms" cursive;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m04b{/*FREE*/
+	color:#c38e00;
+	font-size:32px;
+	top:4px;
+	left:4px;
+	letter-spacing:3px;
+	font-family:"arial" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m04c{/*Programs*/
+	color:#000000;
+	font-size:20px;
+	top:25px;
+	left:20px;
+	letter-spacing:4px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+.m05{
+}
+	.m05a{/*EVOL*/
+	color:#d5e497;
+	font-size:35px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m05b{/*ution*/
+	color:#ffcc00;
+	font-size:27px;
+	top:13px;
+	left:108px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+	.m05c{/*Revol*/
+	color:#000000;
+	font-size:20px;
+	top:2px;
+	left:95px;
+	letter-spacing:4px;
+	font-family:"times new roman" fantasy;
+	position:absolute;
+	}
+.m06{
+}
+	.m06a{
+	color:#ade8e2;
+	font-size:35px;
+	left:6px;
+	letter-spacing:-2px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+	.m06b{
+	color:#000000;
+	font-size:28px;
+	top:17px;
+	left:80px;
+	font-family:"times new roman" fantasy;
+	position:absolute;
+	}
+	.m06c{
+	color:#391b51;
+	font-size:14px;
+	top:13px;
+	letter-spacing:4px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+.m07{
+}
+	.m07a{
+	color:#e3a4b1;
+	font-size:40px;
+	top:3px;
+	left:7px;
+	letter-spacing:4px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+	.m07b{
+	color:#000000;
+	font-size:14px;
+	top:30px;
+	left:6px;
+	letter-spacing:4px;
+	font-family:cursive;
+	font-weight:bold;
+	position:absolute;
+	}
+.m08{
+}
+	.m08a{
+	color:#c9e6e6;
+	font-size:38px;
+	top:-10px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m08b{
+	color:#562949;
+	font-size:28px;
+	top:18px;
+	left:50px;
+	letter-spacing:4px;
+	font-family:"arial" sans-serif;
+	position:absolute;
+	}
+.m09{
+}
+	.m09a{
+	color:#e6e5bc;
+	font-size:44px;
+	top:-5px;
+	left:4px;
+	letter-spacing:-2px;
+	font-family:"arial black" sans-serif;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m09b{
+	color:#2c5650;
+	font-size:20px;
+	top:-2px;
+	left:1px;
+	letter-spacing:4px;
+	font-family:cursive;
+	font-weight:bold;
+	position:absolute;
+	}
+	.m09c{
+	color:#000000;
+	font-size:20px;
+	top:25px;
+	left:60px;
+	letter-spacing:4px;
+	font-family:"times new roman" fantasy;
+	font-style:italic;
+	position:absolute;
+	}

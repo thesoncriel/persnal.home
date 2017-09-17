@@ -1,0 +1,43 @@
+#frmBase{
+}
+.image_clip{
+	width:400px;
+	height:300px;
+	border-style:dashed;
+	border-width:4px;
+	border-color:#7f9db9;
+	opacity:0.75;
+	filter:alpha(opacity=75);
+}
+#description_clip{
+	width:540px;
+	height:100px;
+	font-style:italic;
+	border-style:dotted;
+	border-width:5px;
+	border-color:#000000;
+	background-color:#ffffff;
+	text-align:center;
+	opacity:0.85;
+	filter:alpha(opacity=85);
+}
+#btnPre{
+	width:70px;
+	height:100px;
+	font-size:20px;
+}
+#btnNext{
+	width:70px;
+	height:100px;
+	font-size:20px;
+}
+a.imagebox:link, a.imagebox:visited, a.imagebox:hover{
+	text-decoration:none;
+	color:#000000;
+	border-color:transparent;
+	border-style:none;
+	border-width:0px;
+	background-color:transparent;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}

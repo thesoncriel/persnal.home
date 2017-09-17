@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/html" xml:lang="ko">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title> 메인이다 -_-v</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/arrowmaker.css">
+	<link rel="stylesheet" type="text/css" href="css/horizonhill.css">
+	<script language="javascript" src="script/main.js">
+	</script>
+	<script language="javascript" src="script/arrowmaker.js">
+	</script>
+	<script language="javascript" src="script/horizonhill.js">
+	</script>
+</head>
+
+<body onload="title_box(':::: Theory for My Home ::::');ArrowMaster_top();HorizonHill_top();HorizonHill_bottom();DocLayout()">
+<div id="random_polygon">
+</div>
+<div id="horizon_hill_top">
+</div>
+<div id="tableTitle">
+</div>
+<div class="main_para">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<!--문단 시작 // 복사 해서 쓰셈 -->
+	<p class="m01">
+	<!--<span class="para_title0">Hello World ~ !</span>-->
+	<span class="m07a">Project</span>
+	<span class="m07b">mini</span>
+	</p>
+	<hr size="1" color="#ffcc00">
+	<br>
+	<p class="para">
+		<span id="first_word0">이</span>번 장은 이 홈페이지를 만들면서 고민했던 여러가지 요소들을 다뤄보고자 한다.<br>
+		이 홈페이지의 가장 큰 컨셉은 예전에도 말했듯이 오로지 텍스트만으로 이뤄진 홈페이지 이다.<br>
+		사용한건 오직 HTML과 CSS, JavaScrpt만을 썼으며,<br>
+		가끔 이해를 돕기 위해 어쩔 수 없이 이미지를 넣은 것을 제외하면<br>
+		몽~~땅 텍스트이다.<br>
+		믿겨지지 않는다면 그림처럼 보이는 것들에 마우스 우측 클릭을 해 보시라 -_-)r<br>
+		아마 다른 그림으로 저장 같은 항목이 보이지 않을 것이다.<br>
+		더 확실하게 확인하고 싶다면 Ctrl+A나 마우스 커서로 쫙~ 끌어 보라.<br>
+		어떠한가?<br>
+		아마 신기할 수도 있고 재미있을 수도 있고<br>
+		그렇지 않다면 시시할 수도 있다 -.-; (아마도 시시할 것이다;;)<br>
+		<br>
+	</p>
+	<p class="para">
+		<img src="image/project_index.gif" width="385" height="251" class="img0"><br>
+		<span class="desc0">○ 인덱스 페이지 개요 작성도</span></img><br>
+		<br>
+		첫번째로 대문(?)을 보자.<br>
+		화면의 좌측 상단에 로고가 있고, 배경에는 알 수 없는 알고리즘(?)으로 이뤄진 랜덤 배경화면이 있고,<br>
+		화면을 대각선으로 가로지르는 크로스 워드가 있으며, 화면 중심 하단엔 그 크로스 워드를 제어하는 컨트롤러가 위치 한다.<br>
+		마지막으로 메인 프레임 페이지로 입장할 수 있는 입장 버튼이 우측 하단에 위치 한다.<br>
+		자~ 여기서 볼 것은 역시 모든게 텍스트로 구성되어 있다는 것!<br>
+		그럼 로고부터 보도록하자.<br>
+		<br>
+		<hr size="1" color="#ccff00" width="75%" align="right">
+		<br>
+	</p>
+	<p class="para">
+		로고는 크게 글자부분, 배경부분으로 나뉘는데,<br>
+		이들은 모두 CSS의 Position 속성을 활용한 얘이다.<br>
+		<br>
+		<img src="image/project_position.gif" width="472" height="369" class="img0"><br>
+		<span class="desc0">○ 레이어와 CSS Position의 관계</span></img><br>
+		<br>
+		포토샵같은 그래픽툴에는 레이어라는 개념이 있다.<br>
+		여기서 레이어란 투명한 종이에 그림을 그리고 그것들을 여러개 겹친 것을 뜻한다.<br>
+		포토샵에서 레이러를 쓸 때 레이어의 가장 윗쪽의 그림이 그외의 그림들을 덮어 씌우는데 반해<br>
+		CSS의 Position은 실제 문서의 아래에 있는 객체가 가장 위에 있는 꼴이다.<br>
+		포토샵 레이어의 그 위치적 의미가 정 반대가 되는 셈이다.<br>
+		그리고 CSS의 Position값을 absolute로 줄 경우, 비로소 포토샵 레이어의 좌표값처럼<br>
+		HTML문서 내 객체도 top, left 속성값을 이용하여 자유자제로 위치를 옮길 수 있게 되는 것이다.<br>
+		<br>
+		<hr size="1" color="#ffcc00" width="75%">
+		<br>
+	</p>
+	<p class="para">
+		<img src="image/project_crossword.gif" width="372" height="362" class="img0"><br>
+		<span class="desc0">○ 크로스 워드(Cross Word) 개요 모식도</span></img><br>
+		<br>
+		크로스 워드도 마찬가지 개념이다.<br>
+		다른 점이 있다면 position을 absolute로 주되<br>
+		top 과 left 값을 해상도(resolution)와 문자열의 길이(length)에 맞춰 표현했을 뿐이다.<br>
+		참고로 n은 문자열중 n번째 문자라는 의미이다.<br>
+		어찌보면 무척 단순한 원리이다.<br>
+		물론 저대로 하면 글자가 화면 밖으로 나간다던지 글자 길이가 너무 짧을 경우 오류가 생길 수 있으므로<br>
+		그에 대해 적절한 대안이 요구될 수 있을 것이다.<br>
+		<br>
+		<hr size="1" color="#00ccff" width="75%" align="left">
+		<br>
+	</p>
+	<p class="para">
+		<img src="image/project_gradient.gif" width="271" height="192" class="img0"><br>
+		<span class="desc0">○ 그라디언트(Gradient) 생성 모식도</span></img><br>
+		<br>
+		문자열에 그라디언트를 넣어주는 것은 약간의 수학적 지식을 요구한다.<br>
+		물론 모두가 꼭 그런건 아니지만 -.-;;<br>
+		필자는 최소한 그러했다.<br>
+		그래서 그 공식을 알아내는 과정 자체가 내게 있어선 수학시간의 문제 풀기 같은 느낌이었다.<br>
+		그라디언트를 생성하기 위한 기본적 과정은 제법 Simple한 면이 있다.<br>
+		위의 그림은 한가지 색을 투명도를 조절하여 나타내는 그라디언트를 설명하고 있다.<br>
+		<i>n</i> 값은 나타내고자 하는 최대 투명도이고 이 값은 100%가 될 수도 있고 0%가 될 수도 있다.<br>
+		시작값이 0이라면 n값까지는<br>
+		0, 1, 2, 3, 4, .... n-2, n-1, n<br>
+		대체로 이런 형식으로 도달하게 될 것이다.<br>
+		조금 더 Upgrade하여 그 사이 숫자의 개수를 <i>h</i> 라고 정의 하고 <i>l</i> 을 그라디언트의 위치,<br>
+		G를 최총 투명도 값으로 나타내자면 다음과 같은 수식이 나온다.<br>
+		<img src="image/project_gradient_tho.gif" width="179" height="79"><br>
+		또 한 위의 수식을 다시 응용하여<br>
+		c1을 처음 색상값, c2를 마지막 색상값으로 정의한다면 다음 수식으로 나타낼 수 있다.<br>
+		<img src="image/project_gradient_tho2.gif" width="265" height="61"><br>
+		조금 어려워 보일 것이다.<br>
+		본인도 이걸 알아내기 위해 꽤나 고생했다 -_-;;<br>
+		여기서 <i>h</i> 를 문자열의 길이값으로 대체 하고 <i>l</i> 값을 루프문의 루프값으로 대체한다면<br>
+		문자열에 자연스러운 그라디언트를 생성해 낼 수 있게 된다 :)<br>
+		<br>
+		<hr size="1" color="#ccff00" width="75%" align="right">
+		<br>
+	</p>
+	<p class="para">
+		<img src="image/project_arrow_maker.gif" width="406" height="433" class="img0"><br>
+		<span class="desc0">○ 배경에 쓰인 직삼각형 생성의 원리</span></img><br>
+		<br>
+		배경의 삼각형은 어떻게 만들까?<br>
+		일단 기본 바탕은 정사각형이다.<br>
+		그리고 각 꼭지점에 대각선을 그어 반쪽자리만을 택하면 그것이 직삼각형이 되는 것이다.<br>
+		이 중 선택한 반쪽자리를 dot라 칭하고 나머지 반쪽, 즉 보이지 않은 부분을 trs라 지정하였다.<br>
+		삼각형을 구성하는 각 요소들은 픽셀크기(siz), 가로/세로 길이(pix),<br>
+		그리고 삼각형을 위치시킬 x좌표와 y좌표값이 있다.<br>
+		이것들을 모두 이용하고 값을 넣어주면 삼각형이 만들어지는 것이다.<br>
+		만들어지는 삼각형은 사실 그림이 아니라 Table태그를 이용한 일종의 표이다.<br>
+		따라서 각 픽셀은 셀이 되는 것이고, 픽셀의 크기는 셀의 크기가 되는 것이다.<br>
+		색상은?<br>
+		당연히 셀안에 아무것도 없으니 배경색깔이 되겠다.<br>
+		위치 좌표값 x,y(left,top)를 적용시키기 위해 해당 Table의 position값을 absolute로 주었다.<br>
+		한가지 방향만 가지고 있으면 재미 없으므로<br>
+		도형의 방향을 4방향으로 바꿀 수 있는 알고리즘을 만들기위해 아래와 같은 방법을 택하였다<br>
+			<ol style="margin-left:20px;font-size:14px;line-height:140%">
+			<li>삼각형을 만드는 루프문에 trs부분, dot부분, trs부분, 이렇게 3개의 다른 루프문을 중첩시켜 만든다.</li>
+			<li>길이pix값을 기준으로 pix값에서 1씩 줄이거나 1씩 늘려서 pix값까지 도달하면 계단(stair)을 만든다.</li>
+			<li>대각선에 해당되는 픽셀을 삼각형에 포함시켜야 한다.</li>
+		</ol>
+	</p>
+	<p class="para">
+		위의 원리를 바탕으로 함수를 구상하고, 그 함수의 인수를 각각 삼각형의 요소값으로 치환한다.<br>
+		그리고 함수의 인수값을 일정 범위내의 난수를 생성하여 대입시키면<br>
+		지금 보는 화면의 랜덤 배경그림이 나타나게 되는 것이다.<br>
+		<br>
+		<hr size="1" color="#ffcc00" width="75%">
+		<br>
+	</p>
+	<p class="para">
+		<img src="image/project_main.gif" width="385" height="251" class="img0"><br>
+		<span class="desc0">○ 메인 프레임 페이지 구상도</span></img><br>
+		<br>
+		본문으로 쓰인 메인 프레임은 프레임을 3개로 나눴다.<br>
+		좌측은 메뉴 부분, 중간은 문서 부분, 우측은 로고와 탁상시계가 자리잡고 있다.<br>
+		전체적으로 배경 그림은 삼각형 구현 함수를 이용하여 랜덤하게 돌린 결과를 다시 재사용하고 있다.<br>
+		그리고 좌측, 우측 프레임은 그 위에 다시<br>
+		알파 그라디언트(Alpha Gradient - 같은 색상에 투명도만 달리한 것)로 덮어 씌웠다.<br>
+		메뉴를 구성하는 각 단추는 CSS를 최대한 활용한 문자들의 집합으로 구성되어 있다.<br>
+		우측의 로고는 앞서 인덱스 페이지의 것을 그대로 옮겨 썼으며,<br>
+		아래엔 나모 웹에디터의 실시간 시계 함수를 퍼온 뒤,<br>
+		그 함수가 내뱉는 문자열(String)값을 훔쳐서(-_-) 새로 CSS로 디자인 한 것이다.<br>
+		<br>
+		<hr size="1" color="#00ccff" width="75%" align="left">
+		<br>
+	</p>
+	<p class="para">
+		<img src="image/project_para_design.gif" width="251" height="385" class="img0"><br>
+		<span class="desc0">○ 문서 디자인 구상도</span></img><br>
+		<br>
+		딱히 일반적인 웹문서와 다를 바는 없다.<br>
+		다만 무작위 색상(Random Color)을 이용한 알파 그라디언트를<br>
+		문서의 머릿부분과 꼬리부분에 각각 위치시키고,<br>
+		깔끔하게(?) 문서의 끝과 중간중간 가로선을 넣어준 것,<br>
+		그리고 매번 문서가 열릴 때 마다 문단 첫글자의 색깔도 무작위 색상으로 넣어줬다는 것.<br>
+		뭐... 그정도? ^^;;<br>
+		물론 <span class="type5">알파 그라디언트 역시 그림이 아닌 Table을 이용한 것이다.</span><br>
+		소제목엔 메뉴에서 썼던 단추의 문자 디자인을 그대로 옮겨 재사용 하였다.<br>
+		덧붙여 큰 제목의 좌측 상단에 그림처럼 보이는 것은 역시 Table과 CSS를 응용한 작품(?)이다.<br>
+		<br>
+		<hr size="1" color="#ccff00" width="75%" align="right">
+		<br>
+	</p>
+	<p class="para">
+		이상 지금까지 읽어 주시느라 수고가 많으셨다 'ㅅ')/<br>
+		나름대로 이 홈페이지에 쓰인 기술같지도 않은 기술을 내 멋대로(?) 서술하느라<br>
+		나도 진땀뺐고 -_-a<br>
+		읽는 그대도 멍~때리고 있을 진실에 가슴이 아파온다 ㅠ_ㅠ<br>
+		하지만 그냥 슥~ 보고 지나치는 것보단 어떤 원리로 만들어 졌는지를 알고 넘어가면<br>
+		내 홈페이지가 다른 곳 보다 더욱 매력적으로 느껴지지 않을까 하며<br>
+		또 그러길 바라는 마음에 이 글을 쓰고 여기서 마칠까 한다. :)<br>
+		<br>
+		덧붙여 다음 메뉴는 Illusion Board(일루젼 보드 - 환상의 게시판)이다.<br>
+		여기써 쓰인 환상이란 환상적(Fantastic)인 것이 아니라 -_-;;<br>
+		<span class="type4">잘 될 줄 알고 썼는데 알고보니 구라였다~!</span><br>
+		...라고 정의할 때 쓰는 그 환상(Illusion)이다...;;<br>
+		구라 치고 싶어서 구라를 치는게 아니라<br>
+		본인의 기술적 문제이니 양해를 바란다 _(..)_<br>
+		그럼 비록 환상이지만<br>
+		방명록에 글도 써 주는 센스를 가지고 있다면 정말 좋겠다 (~^^)~<br>
+		환상속의 그대에게 기대를 걸어 보겠노라~!<br>
+		<br>
+		<div align="right">- written by myself</div>
+	</p>
+<br><br>
+<!-- 아래 first_word 시리즈는 필요할 때 마다 뽑아 쓰기 -->
+<!-- 지우면 안됨 -_- 에러남 -->
+<span id="first_word1"></span>
+<span id="first_word2"></span>
+<span id="first_word3"></span>
+<hr size="2" color="#ffaa93">
+<table border="0">
+<tr><td><div id="horizon_hill_bottom"></div>
+<div id="bottom_line0"><hr size="1" color="#b0aed3"></div>
+<div id="bottom_line1"><hr size="1" color="#00a833"></div>
+<div id="bottom_box">Copyleft(c)2009 KyeongNam Provincianal Namhae College -<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer Information System 20901035 - Son Jun Hyeon</div>
+</td></tr></table>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/*랜덤 배경 프레임*/
+#random_polygon{
+width:99%;
+height:99%;
+position:absolute;
+}
+.arrow_blank{
+width:2px;
+height:2px;
+}
+.arrow1{
+width:2px;
+height:2px;
+background-color:#aaaaaa;
+}

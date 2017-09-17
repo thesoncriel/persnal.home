@@ -1,0 +1,87 @@
+.board_table{
+	width:370px;
+	border-style:solid;
+	border-color:#577fa6;
+	border-width:2px;
+}
+.board_subject{
+	height:50px;
+	font-size:22px;
+	font-weight:bold;
+	border-style:none none solid none;
+	border-color:#577fa6;
+	border-width:2px;
+	padding:5px;
+	background-color:#b3c9dd;
+}
+	.board_date{
+		text-align:right;
+		font-size:11px;
+		font-weight:normal;
+	}
+.board_pic{
+	width:70px;
+	text-align:center;
+	vertical-align:top;
+	padding:8px;
+	padding-top:10px;
+}
+	.board_img, #imgPic0, #imgPic1, #imgPic2, #imgPic3{
+		width:50px;
+		height:50px;
+		border-style:dashed;
+		border-width:2px;
+		border-color:#cccccc;
+	}
+	.board_name{
+		font-size:16px;
+		font-style:italic;
+	}
+.board_para{
+	padding:5px 5px 5px 0px;
+	font-size:14px;
+	color:#444444;
+	line-height:150%;
+	background-color:#ffffff;
+}
+
+
+#frmBoard{
+	width:350px;
+	height:400px;
+	line-height:150%;
+	padding:7px;
+	border-style:dashed;
+	border-width:3px;
+	border-color:#888888;
+}
+	.frmTable{
+		line-height:150%;
+		vertical-align:top;
+	}
+	#txtSubject, #txtName, #txtArea{
+		font-size:13px;
+		border-style:solid;
+		border-width:1px;
+		border-color:#6ea2dc;
+		background-color:#ffffff;
+	}
+	#txtSubject, #txtName{
+		height:20px;
+	}
+
+#txtSubject{
+	width:250px;
+}
+#txtName{
+	width:100px;
+}
+#imgPic0, #imgPic1, #imgPic2, #imgPic3{
+	margin-top:5px;
+	margin-right:5px;
+}
+#txtArea{
+	width:300px;
+	height:200px;
+	padding:3px;
+}

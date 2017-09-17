@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN>
+<html xmlns="http://www.w3.org/1999/html" xml:lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Welcome to My HoMe ^-^</title>
+		<link rel="Stylesheet" type="text/css" href="css/index.css">
+		<link rel="Stylesheet" type="text/css" href="css/logo.css">
+		<link rel="Stylesheet" type="text/css" href="css/arrowmaker.css">
+		<script language="javascript" src="script/index.js">
+		<!--	
+		//-->
+		</script>
+		<script language="javascript" src="script/arrowmaker.js">
+		<!--	
+		//-->
+		</script>
+	</head>
+	<body onload="ArrowMaster();CrossWord('컴정과 20901035 손준현',74,130,193,178,115,196)">
+		<!--랜덤 배경 레이어-->
+		<div id="random_polygon" onclick="ArrowMaster()">
+		</div>
+		
+		<!--크로스 워드 레이어-->
+		<div id="cross_word">
+		</div>
+
+		<!--로고 시작-->
+		<div class="logo" onclick="ArrowMaster()">
+			<div class="logo_bg">
+				<div class="logo_bg0s3">۝</div>
+				<div class="logo_bg0s2">۝</div>
+				<div class="logo_bg0s1">۝</div>
+				<div class="logo_bg0s0">۝</div>
+				<div class="logo_bg0">۝</div>
+			</div>
+			<div class="logo_title0">
+				<div><br><br></div>
+				<div class="logo_title01">The</div>
+				<div class="logo_title02">EvolutioN</div>
+				<div class="logo_title03">PARK</div>
+			</div>
+		</div>
+		<!--로고 끝-->
+		
+		<!--하단 폼 부위 시작-->
+		<form id="frmBottom">
+			<input type="button" id="btnMake" value="Draw Yourself" onClick="CrossWord_Easy(txtStr.value,txtRGB1.value,txtRGB2.value)"><br>
+			<label for="txtStr" class="Label">Can you try it ? </label><input type="text" id="txtStr" value="YOU＼CAN＼DO＼IT＼!" onfocus="this.value=''"><input type="button" id="btnChange" value="＼" onClick="txtStr.value=stringReplace(txtStr.value, ' ', '＼')">
+			<label for="txtRGB1" class="Label">1st Color </label><input type="text" id="txtRGB1" onfocus="this.value=''" ondblclick="OpenColorSelector(1)" onChange="GradientPreview(txtRGB1.value, txtRGB2.value)" title="Double Click!!" value="#e29a1c">
+			<label for="txtRGB2" class="Label"> 2nd Color </label><input type="text" id="txtRGB2" onfocus="this.value=''" ondblclick="OpenColorSelector(2)" onChange="GradientPreview(txtRGB1.value, txtRGB2.value)" title="Double Click!!" value="#e29a1c"><br>
+			<span class="pre_label">Gradient Preview </span><div id="preview">||||||||||||</div>
+		</form>
+			<!--색상 선택표 레이어-->
+			<div id="ColorSelector">
+			</div>
+		<!--하단 폼 부위 끝-->
+		
+		<div id="EnterMain">
+			<div class="logo_bg">
+				<div class="logo_bg0s3">۝</div>
+				<div class="logo_bg0s2">۝</div>
+				<div class="logo_bg0s1">۝</div>
+				<div class="logo_bg0s0">۝</div>
+				<div id="logo_bg1">۝</div>
+			</div>
+			
+			<div class="logo_title0">
+				<br><br>
+				<a href="frameset.htm" target="_self">
+					<div class="logo_title01" style="margin-top:10px">into</div>
+					<div class="logo_title03">The</div>
+					<div class="logo_title02" style="margin-top:-25px">my PARK  </div>
+					</a>
+			</div>
+		</div>
+		
+	</body>
+</html>
