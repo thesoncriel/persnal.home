@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/html" xml:lang="ko">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style type="text/css">
+	.board_table{
+		width:370px;
+		border-style:solid;
+		border-color:#577fa6;
+		border-width:2px;
+	}
+	.board_subject{
+		height:50px;
+		font-size:22px;
+		font-weight:bold;
+		border-style:none none solid none;
+		border-color:#577fa6;
+		border-width:2px;
+		padding:5px;
+		background-color:#b3c9dd;
+	}
+		.board_date{
+			text-align:right;
+			font-size:11px;
+			font-weight:normal;
+		}
+	.board_pic{
+		width:70px;
+		text-align:center;
+		vertical-align:top;
+		padding:8px;
+		padding-top:10px;
+	}
+		.board_img, #imgPic0, #imgPic1, #imgPic2, #imgPic3{
+			width:50px;
+			height:50px;
+			border-style:dashed;
+			border-width:2px;
+			border-color:#cccccc;
+		}
+		.board_name{
+			font-size:16px;
+			font-style:italic;
+		}
+	.board_para{
+		padding:5px 5px 5px 0px;
+		font-size:14px;
+		color:#444444;
+		line-height:150%;
+	}
+
+
+	#frmBoard{
+		width:350px;
+		height:400px;
+		line-height:150%;
+		padding:7px;
+		border-style:dashed;
+		border-width:3px;
+		border-color:#888888;
+	}
+		.frmTable{
+			line-height:150%;
+			vertical-align:top;
+		}
+		#txtSubject, #txtName, #txtArea{
+			font-size:13px;
+			border-style:solid;
+			border-width:1px;
+			border-color:#6ea2dc;
+			background-color:#ffffff;
+		}
+		#txtSubject, #txtName{
+			height:20px;
+		}
+
+	#txtSubject{
+		width:250px;
+	}
+	#txtName{
+		width:100px;
+	}
+	#imgPic0, #imgPic1, #imgPic2, #imgPic3{
+		margin-top:5px;
+		margin-right:5px;
+	}
+	#txtArea{
+		width:300px;
+		height:200px;
+		padding:3px;
+	}
+  </style>
+  <script language="javascript">
+	var pic = 0;
+
+	function eventClick_Board_pic(obj, num){
+		pic = num;
+		frmBoard.imgPic0.style.borderColor = "#cccccc";
+		frmBoard.imgPic1.style.borderColor = "#cccccc";
+		frmBoard.imgPic2.style.borderColor = "#cccccc";
+		frmBoard.imgPic3.style.borderColor = "#cccccc";
+		obj.style.borderColor = "#ff5454";
+	}
+
+	
+
+	function eventClick_Submit(){
+		var str = frmBoard.txtArea.value;
+		var subject = frmBoard.txtSubject.value;
+		var name = frmBoard.txtName.value;
+		var para = "";
+		var len = str.length;
+		for (var i = 0; i < len; i++)
+		{
+			if(str.charAt(i) == "\n")
+			{
+				para += "<br>";
+			}
+			para += str.charAt(i);
+		}
+		MakeBoard(subject, name, para);
+
+		frmBoard.txtSubject.value = "";
+		frmBoard.txtName.value = "";
+		frmBoard.txtArea.value = "";
+	}
+
+	function MakeBoard(subject, name, para){
+		var rgb0 = RandomColor(150);
+		var rgb1 = BrightColor(rgb0, 50);
+		var board = "<table cellpadding='0' cellspacing='0' class='board_table' style='border-color:" + rgb0 + "'>"+
+					"<tr>"+
+					"<td colspan='2' class='board_subject' style='border-bottom-color:" + rgb0 + ";background-color:" + rgb1 + "'>" + subject + "<div class='board_date'>" + getToday() + "</div></td>"+
+					"</tr>"+
+					"<tr>"+
+					"<td class='board_pic'><img src='image/board_" + Board_pic() + ".gif' class='board_img'><br><span class='board_name'>" + name + "</span></td>"+
+					"<td class='board_para'>" + para + "</td>"+
+					"</tr>"+
+					"</table><br><hr size='1' color='" + rgb1 + "'><br>";
+		
+		Board_here.innerHTML += board;
+		eventClick_Board_pic(frmBoard.imgPic0);
+	}
+	function Board_pic(){
+		switch(pic)
+		{
+			case 1:
+				return "normal";
+			case 2:
+				return "angry";
+			case 3:
+				return "sad";
+			default:
+				return "smile";
+		}
+	}
+	function getToday(){
+		var today = new Date();
+		var str = "- " + today.getYear() + "/";
+		var tmp = today.getMonth();
+		str += ((parseInt(today.getMonth()) < 10)? "0" + tmp: tmp) + "/";
+		tmp = today.getDay();
+		str += ((parseInt(today.getDay()) < 10)? "0" + tmp: tmp) + " -";
+
+		return str;
+	}
+
+
+	function RandomColor(bright){
+		var str = "rgb(";
+		var min = bright;
+		var max = 255;
+
+		str += parseInt((max - min + 1) * Math.random() + min) + ",";
+		str += parseInt((max - min + 1) * Math.random() + min) + ",";
+		str += parseInt((max - min + 1) * Math.random() + min) + ")";
+
+		return str;
+	}
+
+	function BrightColor(rgb,bright){
+	var str = "rgb(";
+	var tmp = "";
+	var tmpN = 0;
+	var RGB = new Array(3);
+	var len = rgb.length;
+	var i=4;
+	
+	for(var n = 0; n < 3; n++){
+		do{
+			tmp += rgb.charAt(i);
+			i++;
+		}while( ((rgb.charAt(i) != ",") == (rgb.charAt(i) != ")")) );
+
+		tmpN = parseInt(tmp);
+		str += tmpN + ((255 - tmpN) * bright/100);
+
+		if(n < 2)
+		{
+			str += ","
+		}
+		tmp = "";
+		i++;
+	}
+	str += ")";
+
+	return str;
+	}
+  </script>
+ </HEAD>
+
+ <BODY onload="eventClick_Board_pic(frmBoard.imgPic0)">
+  <table cellpadding='0' cellspacing='0' class='board_table'>
+	<tr>
+		<td colspan='2' class='board_subject'>방명록 입니다~!<div class='board_date'>- 2009/06/05 - </div></td>
+	</tr>
+	<tr>
+		<td class='board_pic'><img src='image/board_smile.gif' class='board_img'><br><span class='board_name'>TheSON</span></td>
+		<td class='board_para'>일루젼 보드(Illusion Board)는 글을 생성하고 난 뒤, 다른 곳에 갔다 오거나 새로고침(F5)을 하실 경우 내용이 지워집니다.<br>
+		한마디로 일루젼, 환상인 것이죠 ㅠ_ㅠ;;<br>
+		이 점 유의 하시길 바랍니다 _(..)_</td>
+	</tr>
+  </table>
+  <br><hr><br>
+	<div id="Board_here"></div>
+  <form id="frmBoard">
+	<table border="0"><tr>
+		<td class="frmTable">
+			<label for="txtTitle">Subject :</label><br>
+			<label for="txtName">Name :</label><br>
+			<label>Picture :&nbsp;</label>
+		</td>
+		<td class="frmTable">
+			<label>&nbsp;</label><input type="text" id="txtSubject"><br>
+			<label>&nbsp;</label><input type="text" id="txtName"><br>
+			<label>&nbsp;</label><img src="image/board_smile.gif" id="imgPic0" onclick="eventClick_Board_pic(this,0)">
+			<img src="image/board_normal.gif" id="imgPic1" onclick="eventClick_Board_pic(this,1)">
+			<img src="image/board_angry.gif" id="imgPic2" onclick="eventClick_Board_pic(this,2)">
+			<img src="image/board_sad.gif" id="imgPic3" onclick="eventClick_Board_pic(this,3)"><br>
+		</td></tr>
+		<tr><td colspan="2" align="center">
+			<textarea id="txtArea"></textarea><br><br>
+			<input type="button" id="btnSubmit" value="Completed" onclick="eventClick_Submit()">
+		</td></tr>
+	</table>
+  </form>
+ </BODY>
+</HTML>

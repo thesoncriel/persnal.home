@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+	<style type="text/css">
+		#horizon_hill{
+		position:absolute;
+		top:0%;
+		}
+
+		.horizonClass{
+		width:230px;
+		height:25px;
+		background-color:#ffcc00;
+		}
+	</style>
+	<script language="javascript">
+	function HorizonHill(){
+	var str = "<table cellpadding='0' cellspacing='0'>";
+	for(var i = 1; i <= 100; i++){
+		str += "<tr><td class='horizonClass' style='opacity:" + (i/100) + ";filter:alpha(opacity=" + (i*1) + ")'></td></tr>";
+	}
+	str += "</table>";
+	alert(str);
+	horizon_hill.innerHTML = str;
+	}
+	</script>
+ </HEAD>
+
+ <BODY onload="HorizonHill()">
+	<div id="horizon_hill">
+	</div>
+  
+ </BODY>
+</HTML>
